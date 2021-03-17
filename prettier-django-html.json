@@ -1,0 +1,24 @@
+// Prettier/Beautify VS Code settings to have Beautify work on Django templates, and Prettier work everywhere else
+{
+  "files.associations": {
+    "**/*.html": "html",
+    "**/templates/*/*.html": "django-html",
+    "**/templates/*": "django-html"
+  },
+  "[django-html]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "html.format.wrapAttributes": "force-expand-multiline", // force closing angle brackets for opening HTML tags to be on separate line - Beautify doesn't do this automatically
+  "beautify.language": {
+    "html": ["django-html"]
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.tabWidth": 2,
+  "prettier.printWidth": 100,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.arrowParens": "avoid",
+  "prettier.htmlWhitespaceSensitivity": "ignore"
+}
