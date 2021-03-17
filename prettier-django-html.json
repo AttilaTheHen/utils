@@ -9,7 +9,7 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "HookyQR.beautify"
   },
-  "html.format.wrapAttributes": "force-expand-multiline", /* force closing angle brackets for opening HTML tags to be on separate line - Beautify doesn't do this automatically */
+  "html.format.wrapAttributes": "force-expand-multiline", // force closing angle brackets for opening HTML tags to be on separate line - Beautify doesn't do this automatically
   "beautify.language": {
     "html": ["django-html"]
   },
